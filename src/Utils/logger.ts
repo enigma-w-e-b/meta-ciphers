@@ -1,3 +1,12 @@
-import P from 'pino'
+import pino from 'pino'
 
-export default P({ timestamp: () => `,"time":"${new Date().toJSON()}"` })
+export const logger = pino({
+  level: 'info',
+  transport: {
+    target: 'pino-pretty',
+    options: {
+      colorize: true,
+      colorizeObjects: true
+    }
+  }
+})

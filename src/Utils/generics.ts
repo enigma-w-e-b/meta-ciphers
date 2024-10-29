@@ -7,7 +7,7 @@ import { proto } from '../../WAProto'
 import { version as baileysVersion } from '../Defaults/meta-ciphers-version.json'
 import { BaileysEventEmitter, BaileysEventMap, BrowsersMap, DisconnectReason, WACallUpdateType, WAVersion } from '../Types'
 import { BinaryNode, getAllBinaryNodeChildren, jidDecode } from '../WABinary'
-import logger from './logger'
+import { logger } from './logger'
 
 const PLATFORM_MAP = {
 	'aix': 'AIX',
